@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title><%=title%></title>
+		<meta name="generator" content="Bootply" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+        <link href="css/styles.css" rel="stylesheet">
+        <link href="css/style1.css" rel="stylesheet">
+	</head>
+	<body>
+<header class="navbar navbar-bright navbar-fixed-top" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="/" class="navbar-brand">Home</a>
+    </div>
+    <nav class="collapse navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+        <%for(i=0;i<nav.length;i++){%>
+        <li>
+          <a href="<%=nav[i].link%>"><%=nav[i].name%></a>
+        </li>
+        <%}%>
+      </ul>
+      <ul class="nav navbar-right navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-search"></i></a>
+          <ul class="dropdown-menu" style="padding:12px;">
+            <form class="form-inline">
+              <button type="submit" class="btn btn-default pull-right"><i class="glyphicon glyphicon-search"></i></button><input type="text" class="form-control pull-left" placeholder="Search">
+            </form>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div id="masthead">  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7">
+        <h1><%=title%>
+          <p class="lead"></p>
+        </h1>
+      </div>
+      <div class="col-md-5">
+        <div class="well well-lg"> 
+          <div class="row">
+            <div class="col-sm-12">
+              
+			
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </div><!-- /cont -->
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        
+        <!-- <div class="top-spacer"> </div> -->
+        
+      </div>
+    </div> 
+  </div><!-- /cont -->
+  
+</div>
+    
+                
+         <!-- Signup -->
+
+         <div class="row">
+
+         <!-- <div class="col-md-2 col-sm-3 text-center"></div> -->
+      
+         <div class="col-lg-4"></div>
+      
+       
+         <div class="col-lg-4">
+         <form class="box2" action="/add" method="GET" onsubmit="return validate1() &&  pass()">
+          <h1>Sign Up</h1>
+        
+          <input type="text" name="" placeholder="First Name">
+          <input type="text" name="" placeholder="Last Name">
+          <input type="text" name="" id="phno" placeholder="Phone">
+          <label for="phone"  id="pho"></label> 
+          <input type="email" name="" placeholder="Email"  > 
+          <input type="Password" id="pwd" name="" placeholder="Password" required>
+          <input type="Password" id="cpwd" name="" placeholder="Confirm Password" required >
+          <label for="strength"  id="strength"></label> 
+          <input type="text" name="" placeholder="Address">
+          <input type="date" id="dob" name="DOB">
+          <select name="Gender" id="gender">
+              <option value="male">Male</option>
+              <option value="Female">Female</option>
+              <option value="others">Others</option>
+           </select>
+          
+          <input type="submit" value="Sign In" placeholder="SignIn">
+          <!-- <label class="dont"><a href="./Signin .html"> Already have an account..?</a> </label> -->
+          </form>
+          </div>
+         </div>
+         <div class="col-lg-4"></div>
+      
+      
+         <!-- /Signup -->
+                                                                                       
+	                                                
+                                                                        
+
+<div class="container" id="Footer" >
+  <div class="row">
+    <div class="col col-sm-12">
+      
+      <h1>Follow Us</h1>
+      <div class="btn-group">
+       <a class="btn btn-twitter btn-lg" href="#"><i class="icon-twitter icon-large"></i> Twitter</a>
+	   <a class="btn btn-facebook btn-lg" href="#"><i class="icon-facebook icon-large"></i> Facebook</a>
+	   <a class="btn btn-google-plus btn-lg" href="#"><i class="icon-google-plus icon-large"></i> Google+</a>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<hr>
+
+
+<footer >
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <ul class="list-inline">
+          <li><i class="icon-facebook icon-2x"></i></li>
+          <li><i class="icon-twitter icon-2x"></i></li>
+          <li><i class="icon-google-plus icon-2x"></i></li>
+          <li><i class="icon-pinterest icon-2x"></i></li>
+        </ul>
+        
+      </div>
+      <div class="col-sm-6">
+          <p class="pull-right">Built with <i class="icon-heart-empty"></i> at <a href="http://www.bootply.com">Bootply</a></p>      
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+	<!-- script references -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/script.js"></script>
+	</body>
+</html>

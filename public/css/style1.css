@@ -1,0 +1,237 @@
+/* Signup box    */
+
+.box2
+{   width: 400px;
+    padding: 40px;
+    margin-top: 35em;
+    margin-bottom: 10em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #061a30; 
+    text-align: center;
+}
+
+
+.box2 input[type="text"],.box2 input[type="password"],.box2 input[type="email"],.box2 input[type="date"],.box2 input[type="file"]
+{   border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width:200px;
+    outline: none;
+    color: rgb(197, 190, 190);
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+.box2 select
+{   border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width:200px;
+    outline: none;
+    color: rgb(99, 95, 95);
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+.box2 input[type="text"]:focus,.box input[type="password"]:focus,.box2 input[type="email"]:focus
+{   width: 280px;
+    border-color: #2ecc71;
+
+}
+
+.box2 h1
+{   color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+
+}
+
+
+.box2 input[type="submit"]
+{    border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 10px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+
+}
+
+
+.box2 input[type="submit"]:hover
+{
+    background-color: #2ecc71;
+}
+
+ /*/ Signup box */
+
+ /* Addbook    */
+
+.box
+{   width: 400px;
+    padding: 40px;
+    margin-top: 22em;
+    margin-bottom: 10em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #061a30; 
+    text-align: center;
+}
+
+
+.box input[type="text"],.box input[type="password"],.box input[type="email"],.box input[type="date"],.box input[type="file"]
+{   border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width:200px;
+    outline: none;
+    color: rgb(197, 190, 190);
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+.box select
+{   border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width:200px;
+    outline: none;
+    color: rgb(99, 95, 95);
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+.box input[type="text"]:focus,.box input[type="password"]:focus,.box input[type="email"]:focus
+{   width: 280px;
+    border-color: #2ecc71;
+
+}
+
+.box h1
+{   color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+
+}
+
+
+.box input[type="submit"]
+{    border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 10px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+
+}
+
+
+.box input[type="submit"]:hover
+{
+    background-color: #2ecc71;
+}
+
+ /*/ Addbook */
+
+  /* Signin    */
+
+.box1
+{   width: 400px;
+    padding: 40px;
+    margin-top: 20em;
+    margin-bottom: 10em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #061a30; 
+    text-align: center;
+}
+
+
+.box1 input[type="text"],.box1 input[type="password"],.box1 input[type="email"]
+{   border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width:200px;
+    outline: none;
+    color: rgb(197, 190, 190);
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+
+.box1 input[type="text"]:focus,.box1 input[type="password"]:focus,.box1 input[type="email"]:focus
+{   width: 280px;
+    border-color: #2ecc71;
+
+}
+
+.box1 h1
+{   color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+
+}
+
+
+.box1 input[type="submit"]
+{    border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 10px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+
+}
+
+
+.box1 input[type="submit"]:hover
+{
+    background-color: #2ecc71;
+}
+
+ /*/ Signin */

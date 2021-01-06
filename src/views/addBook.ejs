@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title><%=title%></title>
+		<meta name="generator" content="Bootply" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+        <link href="css/styles.css" rel="stylesheet">
+        <link href="css/style1.css" rel="stylesheet">
+	</head>
+	<body>
+<header class="navbar navbar-bright navbar-fixed-top" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="/" class="navbar-brand">Home</a>
+    </div>
+    <nav class="collapse navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+        <%for(i=0;i<nav.length;i++){%>
+        <li>
+          <a href="<%=nav[i].link%>"><%=nav[i].name%></a>
+        </li>
+        <%}%>
+      </ul>
+      <ul class="nav navbar-right navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-search"></i></a>
+          <ul class="dropdown-menu" style="padding:12px;">
+            <form class="form-inline">
+              <button type="submit" class="btn btn-default pull-right"><i class="glyphicon glyphicon-search"></i></button><input type="text" class="form-control pull-left" placeholder="Search">
+            </form>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div id="masthead">  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7">
+        <h1><%=title%>
+          <p class="lead"></p>
+        </h1>
+      </div>
+      <div class="col-md-5">
+        <div class="well well-lg"> 
+          <div class="row">
+            <div class="col-sm-12">
+              
+			
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </div><!-- /cont -->
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <!-- <div class="top-spacer"> </div> -->
+      </div>
+    </div> 
+  </div><!-- /cont -->
+  
+</div>
+    
+                
+         <!-- Add Book -->
+
+         <div class="row">
+
+         <!-- <div class="col-md-2 col-sm-3 text-center"></div> -->
+      
+         <div class="col-lg-4"></div>
+      
+       
+         <div class="col-lg-4">
+         <form class="box" action="/books" method="GET" onsubmit="return pass2() &&  pass() && pass3()">
+          <h1>Add Books</h1>
+        
+          <input type="text" id="bname" name="" placeholder="Book Name">
+          <input type="text" id="aname" name="" placeholder="Author Name">
+          <label for="lable1"  id="lable1"></label> 
+          <input type="text" id="genre" name="" placeholder="Genre">
+          <input type="file" id="imgs" name="" placeholder="Image">
+          <label for="lable2"  id="lable2"></label> 
+          
+          <!-- <input type="radio" name="gender">Male    <input type="radio" name="gender">Female -->
+          <input type="submit" value="ADD" placeholder="Add">
+          <!-- <label class="dont"><a href="./Signin .html"> Already have an account..?</a> </label> -->
+          </form>
+          </div>
+         </div>
+         <div class="col-lg-4"></div>
+      
+      
+         <!-- /Add Book -->
+                                                                                       
+	                                                
+                                                                        
+
+<div class="container" id="Footer2" >
+  <div class="row">
+    <div class="col col-sm-12">
+      
+      <h1>Follow Us</h1>
+      <div class="btn-group">
+       <a class="btn btn-twitter btn-lg" href="#"><i class="icon-twitter icon-large"></i> Twitter</a>
+	   <a class="btn btn-facebook btn-lg" href="#"><i class="icon-facebook icon-large"></i> Facebook</a>
+	   <a class="btn btn-google-plus btn-lg" href="#"><i class="icon-google-plus icon-large"></i> Google+</a>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<hr>
+
+
+<footer >
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <ul class="list-inline">
+          <li><i class="icon-facebook icon-2x"></i></li>
+          <li><i class="icon-twitter icon-2x"></i></li>
+          <li><i class="icon-google-plus icon-2x"></i></li>
+          <li><i class="icon-pinterest icon-2x"></i></li>
+        </ul>
+        
+      </div>
+      <div class="col-sm-6">
+          <p class="pull-right">Built with <i class="icon-heart-empty"></i> at <a href="http://www.bootply.com">Bootply</a></p>      
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+	<!-- script references -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/script.js"></script>
+<script>
+          let bname= document.getElementById("bname");
+          let aname= document.getElementById("aname");
+          let genre= document.getElementById("genre");
+          let imgs= document.getElementById("imgs");
+          let lable1= document.getElementById("lable1");
+          let lable2= document.getElementById("lable2");
+
+ function pass()
+{let rega=/^([A-Za-z\.]+)?$/
+  if(rega.test(aname.value))
+  {
+  // lable1.innerHTML="Success";
+  // lable1.style.color="green";
+  // lable1.style.border="2px solid green";
+  // lable1.style.borderRadius="24px";
+  // lable1.style.padding="0.5em";
+   return true;
+  }
+  else
+  {lable1.innerHTML="Only Author name is required, No other characters allowed";
+  lable1.style.color="red";
+  lable1.style.border="2px solid red";
+  lable1.style.borderRadius="24px";
+  lable1.style.padding="0.5em";
+   return false;
+  }
+}
+
+function pass2()
+{
+  if(imgs.value =="")
+  {lable2.innerHTML="File not attatched";
+  lable2.style.color="red";
+  lable2.style.border="2px solid red";
+  lable2.style.borderRadius="24px";
+  lable2.style.padding="0.5em";
+   return false;
+  }
+  else
+  {lable2.innerHTML="File attatched";
+  lable2.style.color="green";
+  lable2.style.border="2px solid green";
+  lable2.style.borderRadius="24px";
+  lable2.style.padding="0.5em";
+   return true;
+  }
+}
+
+function pass3()
+{
+  if(aname.value =="" || bname.value =="")
+  {lable1.innerHTML="Field can't be empty";
+  lable1.style.color="red";
+  lable1.style.border="2px solid red";
+  lable1.style.borderRadius="24px";
+  lable1.style.padding="0.5em";
+   return false;
+  }
+  else
+  {
+  // lable1.innerHTML="Success";
+  // lable1.style.color="green";
+  // lable1.style.border="2px solid green";
+  // lable1.style.borderRadius="24px";
+  // lable1.style.padding="0.5em";
+   return true;
+  }
+}
+</script>
+	</body>
+</html>
